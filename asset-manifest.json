@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-02-phonebook/static/css/main.29c56a89.css",
-    "main.js": "/goit-react-hw-02-phonebook/static/js/main.205d41c3.js",
-    "static/media/feedBack.png": "/goit-react-hw-02-phonebook/static/media/feedBack.8cc62aa35af7315d9e6c.png",
-    "static/media/feedBack2.png": "/goit-react-hw-02-phonebook/static/media/feedBack2.4489009378a023a42226.png",
-    "index.html": "/goit-react-hw-02-phonebook/index.html",
-    "main.29c56a89.css.map": "/goit-react-hw-02-phonebook/static/css/main.29c56a89.css.map",
-    "main.205d41c3.js.map": "/goit-react-hw-02-phonebook/static/js/main.205d41c3.js.map"
+    "main.css": "/goit-react-hw-02-feedback/static/css/main.29c56a89.css",
+    "main.js": "/goit-react-hw-02-feedback/static/js/main.000f44ed.js",
+    "static/media/feedBack.png": "/goit-react-hw-02-feedback/static/media/feedBack.8cc62aa35af7315d9e6c.png",
+    "static/media/feedBack2.png": "/goit-react-hw-02-feedback/static/media/feedBack2.4489009378a023a42226.png",
+    "index.html": "/goit-react-hw-02-feedback/index.html",
+    "main.29c56a89.css.map": "/goit-react-hw-02-feedback/static/css/main.29c56a89.css.map",
+    "main.000f44ed.js.map": "/goit-react-hw-02-feedback/static/js/main.000f44ed.js.map"
   },
   "entrypoints": [
     "static/css/main.29c56a89.css",
-    "static/js/main.205d41c3.js"
+    "static/js/main.000f44ed.js"
   ]
 }
