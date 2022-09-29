@@ -24,7 +24,7 @@ export const AppHeader = styled.h1`
 
   margin-bottom: ${p => p.theme.space[5]}px;
 `;
-export const AppImg = styled.img`
+export const AppImgLeft = styled.img`
   @media screen and (max-width: 950px) {
     display: none;
   }

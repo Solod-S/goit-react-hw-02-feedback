@@ -3,12 +3,10 @@ import React from 'react';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
-import { AppHeader, AppSection, AppImg, AppImgRigth } from './App.styled';
+import { AppHeader, AppSection, AppImgLeft, AppImgRigth } from './App.styled';
 import image from '../img/feedBack.png';
 import image2 from '../img/feedBack2.png';
 class App extends React.Component {
-  static propTypes = {};
-
   state = {
     good: 0,
     neutral: 0,
@@ -48,16 +46,16 @@ class App extends React.Component {
     }
   };
   feedbackToAdd = key => {
-    console.log(key);
     this.setState(prevState => ({
       [key]: prevState[key] + 1,
     }));
   };
   render() {
     const stateKeys = Object.keys(this.state);
+
     return (
       <>
-        <AppImg src={image} />
+        <AppImgLeft src={image} />
         <AppSection>
           <AppHeader>Please leave feedback</AppHeader>
           <FeedbackOptions
