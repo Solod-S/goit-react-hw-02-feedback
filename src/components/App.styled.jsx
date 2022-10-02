@@ -29,8 +29,9 @@ export const AppImgLeft = styled.img`
     display: none;
   }
   display: block;
-  max-width: 365px;
-  height: auto;
+  height: 600px;
+  // max-width: 365px;
+  // height: auto;
   margin-right: ${p => p.theme.space[5]}px;
 `;
 export const AppImgRigth = styled.img`
@@ -38,6 +39,7 @@ export const AppImgRigth = styled.img`
     display: none;
   }
   display: block;
-  max-width: 365px;
-  height: auto;
+  height: 600px;
+  // max-width: 365px;
+  // height: auto;
 `;
