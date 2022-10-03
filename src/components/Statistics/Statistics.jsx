@@ -5,8 +5,13 @@ import {
   StatisticsItem,
 } from './Statistics.styled';
 
-export const Statistics = props => {
-  const { good, bad, neutral, total, positivePercentage } = props;
+export const Statistics = ({
+  good,
+  bad,
+  neutral,
+  total,
+  positivePercentage,
+}) => {
   return (
     <>
       <StatisticsHeader>Statistics</StatisticsHeader>

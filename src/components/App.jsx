@@ -13,17 +13,6 @@ class App extends React.Component {
     bad: 0,
   };
 
-  pendingForResult = () => {
-    if (
-      this.state.good === 0 &&
-      this.state.neutral === 0 &&
-      this.state.bad === 0
-    ) {
-      return true;
-    }
-    return false;
-  };
-
   countTotalFeedback = () => {
     const totalFeedback = Object.values(this.state).reduce(
       (total, value) => total + value,
@@ -32,18 +21,14 @@ class App extends React.Component {
     return totalFeedback;
   };
   countPositiveFeedbackPercentage = () => {
-    if (this.pendingForResult()) {
-      return 0;
-    } else {
-      // const persantage = Math.trunc(
-      //   (this.state.good / this.countTotalFeedback()) * 100
-      // );
+    // const persantage = Math.trunc(
+    //   (this.state.good / this.countTotalFeedback()) * 100
+    // );
 
-      const persantage = Math.round(
-        (100 / this.countTotalFeedback()) * this.state.good
-      );
-      return persantage;
-    }
+    const persantage = Math.round(
+      (100 / this.countTotalFeedback()) * this.state.good
+    );
+    return persantage;
   };
   feedbackToAdd = key => {
     this.setState(prevState => ({
@@ -61,8 +46,8 @@ class App extends React.Component {
           <FeedbackOptions
             options={stateKeys}
             onLeaveFeedback={this.feedbackToAdd}
-          ></FeedbackOptions>
-          {this.pendingForResult() ? (
+          />
+          {!this.countTotalFeedback() ? (
             <Notification message="No feedback given" />
           ) : (
             <Statistics
@@ -71,7 +56,7 @@ class App extends React.Component {
               bad={this.state.bad}
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
-            ></Statistics>
+            />
           )}
         </AppSection>
         <AppImgRigth src={image2} />
